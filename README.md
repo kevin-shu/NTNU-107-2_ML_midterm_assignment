@@ -1,9 +1,9 @@
 
 # How to run the program
-In the terminal:
+In the terminal, switch to the folder of the project, and then:
 ``` 
 # Install required modules: 
-pip freeze > requirements.txt 
+pip install -r requirements.txt
 
 # Preprocess the data, this should generate two files: "north_region.csv" and "all_region.csv"
 python preprocess.py
@@ -15,14 +15,10 @@ python source/linear_regression.py
 python source/decision_tree_classifier.py
 ```
 
-# Algorithm
-## Preprocess
+# Data preprocess algorithm:
 1. Search and read all the ```.xsl``` file under **data** folder into program, and do the pivot analysis to make all the features into indivisual columns.
 2. Merge all the data from different stations into one dataframe, and leave only the common features (that every station has).
 3. Output the organized data into ```north_region.csv``` and ```all_region.csv```.
-
-## Decision Tree classifier
-
 
 
 # Finding
